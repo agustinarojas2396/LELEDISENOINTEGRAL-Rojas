@@ -24,7 +24,9 @@ h5{
     font-weight: normal;
     font-size: 20px;
     text-align: left;
-    margin: 50px;}
+    margin: 50px;
+    padding: 1rem;}
+
 
 h6{
     font-size: 30px;}
@@ -109,10 +111,20 @@ ul li:hover ul{
     background-color: white;
     opacity: 50%;}
 
+.items3 {
+    padding: 1rem;
+}
+
+.items:visited{
+    color:black ;
+
+}
+.items:link{
+    color: black;
+}
 footer{
     font-size: 13px;
-    margin-top: 4rem;
-    text-align: center;}
+    margin-top: 4rem;}
 
 .formulario{
     margin: 100px;
@@ -146,7 +158,10 @@ font-size: 30px;}
     h3{
         font-size: 15px;
     }
-    h4{font-size: 10px;}
+    h5{
+        font-size: 15px;
+        color: white;
+    }
     h6{
         font-size: 15px;
     }
@@ -158,9 +173,6 @@ font-size: 30px;}
     }
     .instagram{
         font-size: 20px;
-    }
-    .footer{
-        font-size: 10px;
     }
     .menunav {
         font-size: 15px;
@@ -186,5 +198,8 @@ font-size: 30px;}
     }
     .speech{
         font-size: 20px;
+    }
+    h4{
+        font-size: 15px; 
     }
 }
