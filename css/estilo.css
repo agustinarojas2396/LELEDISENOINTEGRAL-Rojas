@@ -110,7 +110,9 @@ ul li:hover ul{
     opacity: 50%;}
 
 footer{
-    font-size: 13px;}
+    font-size: 13px;
+    margin-top: 4rem;
+    text-align: center;}
 
 .formulario{
     margin: 100px;
@@ -125,11 +127,9 @@ footer{
 .titulo{
 font-size: 30px;}
 
-.fotofoto {
-    transition: width 4s, border-radius 1s;}
-
 .fotofoto:hover{
-    border-radius: 50%;}
+    transform: translate(10px, 20px);
+    width: 4s;}
 
 .inquietudes{
     font-size: 40px;}
