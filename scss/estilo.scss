@@ -1,5 +1,16 @@
 @import "letras";
 @import "media";
+@mixin iconosredes($hover) {
+    font-size: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    color: rgb(211, 94, 141);
+    
+    &:hover{ color: $color-blanco;}
+    
+}
+
 
 $color-negro: black;
 $color-blanco:white;
@@ -105,19 +116,26 @@ ul ul{
 }
 
 
-footer{
-    font-size: 13px;
-    margin-top: 4rem;}
-
+footer{ 
+    margin-top: 10px;
+    .redes{
+        display: inline-block;
+        padding-left: 30px;
+        line-height: 2;
+        .instagram{
+            @include iconosredes($color-blanco);
+        }
+        .facebook{
+            @include iconosredes($color-blanco);}
+        .numero{
+            @include iconosredes($color-blanco);
+        }
+    }
+}
 .formulario{
     margin: 100px;
     text-align: center;}
 
-.instagram{
-    font-size: 70px;
-    text-align: left;
-    padding: 50px;
-    color: rgb(211, 94, 141);}
 
 .titulo{
 font-size: 30px;}

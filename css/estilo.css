@@ -1,14 +1,8 @@
-h1 {
+h1, h2 {
   font-family: 'Staatliches', cursive;
   font-weight: normal;
   text-align: center;
   z-index: 1;
-  font-size: 30px; }
-
-h2 {
-  font-family: 'Staatliches', cursive;
-  font-weight: normal;
-  text-align: center;
   font-size: 30px; }
 
 h3 {
@@ -33,7 +27,7 @@ h6 {
   font-size: 30px; }
 
 @media only screen and (max-width: 600px) {
-  h1 {
+  h1, h2 {
     font-size: 30px; }
   h3 {
     font-size: 15px; }
@@ -65,7 +59,11 @@ h6 {
     font-size: 20px; }
   .speech {
     font-size: 20px; }
-  h4 {
+  .instagram {
+    font-size: 15px; }
+  .facebook {
+    font-size: 15px; }
+  .numero {
     font-size: 15px; } }
 
 header {
@@ -153,18 +151,39 @@ ul ul {
   padding: 1rem; }
 
 footer {
-  font-size: 13px;
-  margin-top: 4rem; }
+  margin-top: 10px; }
+  footer .redes {
+    display: inline-block;
+    padding-left: 30px;
+    line-height: 2; }
+    footer .redes .instagram {
+      font-size: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      align-items: center;
+      color: #d35e8d; }
+      footer .redes .instagram:hover {
+        color: white; }
+    footer .redes .facebook {
+      font-size: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      align-items: center;
+      color: #d35e8d; }
+      footer .redes .facebook:hover {
+        color: white; }
+    footer .redes .numero {
+      font-size: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      align-items: center;
+      color: #d35e8d; }
+      footer .redes .numero:hover {
+        color: white; }
 
 .formulario {
   margin: 100px;
   text-align: center; }
-
-.instagram {
-  font-size: 70px;
-  text-align: left;
-  padding: 50px;
-  color: #d35e8d; }
 
 .titulo {
   font-size: 30px; }
