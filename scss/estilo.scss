@@ -5,15 +5,22 @@
     margin-left: 5px;
     margin-right: 5px;
     align-items: center;
-    color: rgb(211, 94, 141);
+    color: $color-rosa;
     
     &:hover{ color: $color-blanco;}
+    
+}
+
+@mixin links ($hover){
+        color: $color-negro;
+        &:hover{color:$color-rosa}
     
 }
 
 
 $color-negro: black;
 $color-blanco:white;
+$color-rosa:rgb(211, 94, 141);
 
 header {
     font-family: 'Share', cursive;
@@ -29,18 +36,24 @@ header {
 
 
 body{
-    background-image: url("/media/laptop.jpg");
+    background-image: linear-gradient(to top, rgba(187, 137, 216, 0.26) 0%, hsla(326, 100%, 92%, 0.329) 100%),  url("/media/fondo.jpg");
     background-size: cover;
     font-weight: bolder;
     text-align: center;
-    margin: 0%;
+    margin: auto;
     background-color: rgb(236, 188, 210);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     .contacto{
-        background-image: url("../media/laptop.jpg");
         background-size: cover;
         font-weight: bolder;
         text-align: center;}}
 
+.nosotros{
+    backdrop-filter: blur(4px);
+}
 
 nav{
     .container-fluid{
@@ -98,10 +111,6 @@ ul ul{
 }
 
 
-.texto{
-    color: rgb(211, 94, 141);}
-
-
 .items{
     list-style: none;
     background-color: $color-blanco;
@@ -109,11 +118,15 @@ ul ul{
     align-items: center;
     &:visited{color: $color-negro;}
     &:link{color: $color-negro;}
+    .items3 {
+        padding: 1rem;
+        .items4{ 
+            @include links($color-rosa)
+        }
+    }
+    
 }
 
-.items3 {
-    padding: 1rem;
-}
 
 
 footer{ 
@@ -145,9 +158,27 @@ font-size: 30px;}
         width: 4s;}}
 
 .inquietudes{
-    font-size: 40px;}
+    font-size: 40px;
+    padding: 2rem;}
+    
+
+.texto{
+    color: rgb(231, 225, 230);
+}
 .logito{
-    font-size: 30px;}
+    padding: 3rem;
+    font-size: 30px;
+    .insta{
+        @include links($color-rosa)
+    }
+}
 .consultar{
     text-align: center;
+    color: white;
+    &:hover{color:pink}
 }
+
+.nudo{
+    opacity: 90%;
+}
+

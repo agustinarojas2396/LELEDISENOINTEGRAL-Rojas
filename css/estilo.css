@@ -18,12 +18,13 @@ h4 {
 h5 {
   font-family: 'Staatliches', cursive;
   font-weight: normal;
-  font-size: 20px;
-  text-align: left;
+  font-size: 30px;
+  text-align: center;
   margin: 50px;
   padding: 1rem; }
 
 h6 {
+  text-align: center;
   font-size: 30px; }
 
 @media only screen and (max-width: 600px) {
@@ -77,17 +78,23 @@ header {
     text-align: center; }
 
 body {
-  background-image: url("/media/laptop.jpg");
+  background-image: linear-gradient(to top, rgba(187, 137, 216, 0.26) 0%, rgba(255, 214, 237, 0.329) 100%), url("/media/fondo.jpg");
   background-size: cover;
   font-weight: bolder;
   text-align: center;
-  margin: 0%;
-  background-color: #ecbcd2; }
+  margin: auto;
+  background-color: #ecbcd2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
   body .contacto {
-    background-image: url("../media/laptop.jpg");
     background-size: cover;
     font-weight: bolder;
     text-align: center; }
+
+.nosotros {
+  backdrop-filter: blur(4px); }
 
 nav .container-fluid .menu {
   list-style: none;
@@ -134,9 +141,6 @@ ul ul {
   .speech .fa-solid {
     font-size: 50px; }
 
-.texto {
-  color: #d35e8d; }
-
 .items {
   list-style: none;
   background-color: white;
@@ -146,9 +150,12 @@ ul ul {
     color: black; }
   .items:link {
     color: black; }
-
-.items3 {
-  padding: 1rem; }
+  .items .items3 {
+    padding: 1rem; }
+    .items .items3 .items4 {
+      color: black; }
+      .items .items3 .items4:hover {
+        color: #d35e8d; }
 
 footer {
   margin-top: 10px; }
@@ -193,10 +200,25 @@ footer {
   width: 4s; }
 
 .inquietudes {
-  font-size: 40px; }
+  font-size: 40px;
+  padding: 2rem; }
+
+.texto {
+  color: #e7e1e6; }
 
 .logito {
+  padding: 3rem;
   font-size: 30px; }
+  .logito .insta {
+    color: black; }
+    .logito .insta:hover {
+      color: #d35e8d; }
 
 .consultar {
-  text-align: center; }
+  text-align: center;
+  color: white; }
+  .consultar:hover {
+    color: pink; }
+
+.nudo {
+  opacity: 90%; }
