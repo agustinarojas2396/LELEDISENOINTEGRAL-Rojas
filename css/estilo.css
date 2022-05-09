@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1, h2 {
   font-family: 'Staatliches', cursive;
   font-weight: normal;
@@ -32,6 +33,8 @@ h6 {
     font-size: 30px; }
   h3 {
     font-size: 15px; }
+  h2 {
+    font-size: 15px; }
   h5 {
     font-size: 15px;
     color: white; }
@@ -40,7 +43,10 @@ h6 {
   .emoji {
     font-size: 20px; }
   .consultar {
-    font-size: 15px; }
+    font-size: 15px;
+    color: white; }
+    .consultar:hover {
+      color: black; }
   .instagram {
     font-size: 20px; }
   .menunav {
@@ -55,17 +61,21 @@ h6 {
     font-size: 13px;
     color: aliceblue; }
   .inquietudes {
-    font-size: 20px; }
+    font-size: 15px; }
   .logito {
     font-size: 20px; }
-  .speech {
-    font-size: 20px; }
+  .diseño {
+    font-size: 15px; }
   .instagram {
     font-size: 15px; }
   .facebook {
     font-size: 15px; }
   .numero {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .redes {
+    font-size: 10px; }
+  #arriba {
+    padding: 1rem; } }
 
 header {
   font-family: 'Share', cursive;
@@ -78,7 +88,7 @@ header {
     text-align: center; }
 
 body {
-  background-image: linear-gradient(to top, rgba(187, 137, 216, 0.26) 0%, rgba(255, 214, 237, 0.329) 100%), url("/media/fondo.jpg");
+  background-image: linear-gradient(to top, rgba(143, 140, 150, 0.445) 0%, rgba(135, 130, 133, 0.336) 100%), url("/media/pexels.jpg");
   background-size: cover;
   font-weight: bolder;
   text-align: center;
@@ -86,7 +96,6 @@ body {
   background-color: #ecbcd2;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center; }
   body .contacto {
     background-size: cover;
@@ -158,7 +167,8 @@ ul ul {
         color: #d35e8d; }
 
 footer {
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 15px; }
   footer .redes {
     display: inline-block;
     padding-left: 30px;
@@ -189,7 +199,6 @@ footer {
         color: white; }
 
 .formulario {
-  margin: 100px;
   text-align: center; }
 
 .titulo {
@@ -204,7 +213,8 @@ footer {
   padding: 2rem; }
 
 .texto {
-  color: #e7e1e6; }
+  color: #d35e8d;
+  -webkit-text-stroke: 1px #971967; }
 
 .logito {
   padding: 3rem;
@@ -218,7 +228,7 @@ footer {
   text-align: center;
   color: white; }
   .consultar:hover {
-    color: pink; }
+    color: black; }
 
-.nudo {
-  opacity: 90%; }
+#arriba {
+  margin: 2rem; }
