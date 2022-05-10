@@ -33,8 +33,7 @@ header {
     }
 }
 
-//linear-gradient(to top, rgba(187, 137, 216, 0.26) 0%, hsla(326, 100%, 92%, 0.329) 100%)
-//    background-attachment: fixed;
+
 body{
     background-image:linear-gradient(to top, rgba(143, 140, 150, 0.445) 0%, hsla(324, 2%, 52%, 0.336) 100%), url("/media/pexels.jpg");
     background-size: cover;
@@ -163,11 +162,9 @@ font-size: 30px;}
 .texto{
     color: $color-rosa;
     -webkit-text-stroke: 1px rgb(151, 25, 103);
-    //.texto3{padding: 2rem;}
 }
 
-// contorno de letras
-//    -webkit-text-stroke: 1px $color-rosa;
+
 .logito{
     padding: 3rem;
     font-size: 30px;
