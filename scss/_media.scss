@@ -1,3 +1,11 @@
+
+@mixin footermedia {  
+    align-items: center;
+    font-size: 15px !important;
+}
+
+
+
 @media only screen and (max-width: 600px) {
     h1{
         font-size: 30px;
@@ -40,23 +48,26 @@
         font-size: 13px;
         color: aliceblue;
     }
-    .inquietudes{
-        font-size: 15px;
-    }
+    .inquietudes{ font-size: 15px;}
     .logito{
         font-size: 20px;
     }
+    .speech{
+        margin-right: 10px;
+        margin: 30px;
+    }
+    .fa-thumbs-up{text-size-adjust: 10px;}
     .diseño{
-        font-size: 15px;}
+        font-size: 17px;
+    }
     .instagram{
-        font-size: 15px;
+        @include footermedia()
     }
     .facebook{
-        font-size: 15px;
+        @include footermedia()
     }
-    .numero{
-        font-size: 15px;
-    }
-    .redes{font-size: 10px;}
+    .numero{   
+        @include footermedia() }
     #arriba{padding: 1rem;}
 }
+

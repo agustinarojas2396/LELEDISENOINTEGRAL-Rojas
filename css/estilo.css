@@ -64,16 +64,22 @@ h6 {
     font-size: 15px; }
   .logito {
     font-size: 20px; }
+  .speech {
+    margin-right: 10px;
+    margin: 30px; }
+  .fa-thumbs-up {
+    text-size-adjust: 10px; }
   .diseño {
-    font-size: 15px; }
+    font-size: 17px; }
   .instagram {
-    font-size: 15px; }
+    align-items: center;
+    font-size: 15px !important; }
   .facebook {
-    font-size: 15px; }
+    align-items: center;
+    font-size: 15px !important; }
   .numero {
-    font-size: 15px; }
-  .redes {
-    font-size: 10px; }
+    align-items: center;
+    font-size: 15px !important; }
   #arriba {
     padding: 1rem; } }
 
@@ -88,7 +94,7 @@ header {
     text-align: center; }
 
 body {
-  background-image: linear-gradient(to top, rgba(143, 140, 150, 0.445) 0%, rgba(135, 130, 133, 0.336) 100%), url("/media/pexels.jpg");
+  background-image: linear-gradient(to top, rgba(143, 140, 150, 0.445) 0%, rgba(135, 130, 133, 0.336) 100%), url("../media/pexels4.jpg");
   background-size: cover;
   font-weight: bolder;
   text-align: center;
@@ -142,11 +148,11 @@ ul ul {
 
 .speech {
   font-family: 'Staatliches', cursive;
-  font-size: larger;
   text-align: left;
   margin: 100px;
   padding: 0%;
-  font-size: 30px; }
+  font-size: 30px;
+  display: inline-block; }
   .speech .fa-solid {
     font-size: 50px; }
 
@@ -172,12 +178,12 @@ footer {
   footer .redes {
     display: inline-block;
     padding-left: 30px;
-    line-height: 2; }
+    line-height: 2;
+    align-items: center; }
     footer .redes .instagram {
       font-size: 40px;
       margin-left: 5px;
       margin-right: 5px;
-      align-items: center;
       color: #d35e8d; }
       footer .redes .instagram:hover {
         color: white; }
@@ -185,7 +191,6 @@ footer {
       font-size: 40px;
       margin-left: 5px;
       margin-right: 5px;
-      align-items: center;
       color: #d35e8d; }
       footer .redes .facebook:hover {
         color: white; }
@@ -193,7 +198,6 @@ footer {
       font-size: 40px;
       margin-left: 5px;
       margin-right: 5px;
-      align-items: center;
       color: #d35e8d; }
       footer .redes .numero:hover {
         color: white; }
@@ -225,6 +229,7 @@ footer {
       color: #d35e8d; }
 
 .consultar {
+  padding: 2rem;
   text-align: center;
   color: white; }
   .consultar:hover {
