@@ -5,15 +5,12 @@
     margin-left: 5px;
     margin-right: 5px;
     color: $color-rosa;
-    
-    &:hover{ color: $color-blanco;}
-    
-}
+    &:hover{ color: $color-blanco;}}
 
 @mixin links ($hover){
+        text-align: center;
         color: $color-negro;
-        &:hover{color:$color-rosa}
-}
+        &:hover{color:$color-rosa}}
 
 //colores
 $color-negro: black;
@@ -42,7 +39,6 @@ body{
     background-color: rgb(236, 188, 210);
     background-size: cover;
     background-repeat: no-repeat;
-
     background-position: center;
     .contacto{
         background-size: cover;
@@ -50,8 +46,7 @@ body{
         text-align: center;}}
 
 .nosotros{
-    backdrop-filter: blur(4px);
-}
+    backdrop-filter: blur(4px);}
 
 nav{
     .container-fluid{
@@ -59,9 +54,8 @@ nav{
             list-style: none;
             width: 90%;
             margin: 20px auto;
-            text-align: center;
             z-index: 1;
-            display:inline-block ;
+            display:inline-block;
             ul{
                 li{
                     display: inline-block;
@@ -77,11 +71,11 @@ nav{
             }    
         }
 }}
+
 .nav-item{
     &:hover{
         transform: scale(1,02);
-        border-radius: 100%;}
-}
+        border-radius: 100%;}}
 
 ul ul{
     position: absolute;
@@ -105,8 +99,7 @@ ul ul{
     font-size: 30px;
     display: inline-block;
     .fa-solid{
-        font-size: 50px;}
-}
+        font-size: 50px;}}
 
 
 .items{
@@ -114,15 +107,16 @@ ul ul{
     background-color: $color-blanco;
     opacity: 50%;
     align-items: center;
+    padding-left: 2px;
     &:visited{color: $color-negro;}
     &:link{color: $color-negro;}
     .items3 {
         padding: 1rem;
+        text-align: center;
         .items4{ 
             @include links($color-rosa)
         }
     }
-    
 }
 
 footer{ 
@@ -130,7 +124,6 @@ footer{
     font-size: 15px;
     .redes{
         display: inline-block;
-        padding-left: 30px;
         line-height: 2;
         align-items: center;
         .instagram{
@@ -143,35 +136,34 @@ footer{
         }
     }
 }
+
 .formulario{
     text-align: center;}
-
 
 .titulo{
 font-size: 30px;}
 
 .fotofoto{
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0,3s ease-in-out;
     &:hover{transform: translate(10px, 20px);
         width: 4s;}}
 
 .inquietudes{
-    font-size: 40px;
     padding: 2rem;}
     
 
 .texto{
     color: $color-rosa;
-    -webkit-text-stroke: 1px rgb(151, 25, 103);
-}
-
+    -webkit-text-stroke: 1px rgb(151, 25, 103);}
 
 .logito{
     padding: 3rem;
-    font-size: 30px;
     .insta{
         @include links($color-rosa)
     }
 }
+
 .consultar{
     padding: 2rem;
     text-align: center;

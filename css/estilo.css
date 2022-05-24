@@ -56,7 +56,8 @@ h6 {
   .menunav2 {
     font-size: 12px; }
   .items {
-    font-size: 13px; }
+    font-size: 13px;
+    align-items: center; }
   .contenido {
     font-size: 13px;
     color: aliceblue; }
@@ -73,13 +74,13 @@ h6 {
     font-size: 17px; }
   .instagram {
     align-items: center;
-    font-size: 15px !important; }
+    font-size: 17px !important; }
   .facebook {
     align-items: center;
-    font-size: 15px !important; }
+    font-size: 17px !important; }
   .numero {
     align-items: center;
-    font-size: 15px !important; }
+    font-size: 17px !important; }
   #arriba {
     padding: 1rem; } }
 
@@ -115,7 +116,6 @@ nav .container-fluid .menu {
   list-style: none;
   width: 90%;
   margin: 20px auto;
-  text-align: center;
   z-index: 1;
   display: inline-block; }
   nav .container-fluid .menu ul li {
@@ -160,14 +160,17 @@ ul ul {
   list-style: none;
   background-color: white;
   opacity: 50%;
-  align-items: center; }
+  align-items: center;
+  padding-left: 2px; }
   .items:visited {
     color: black; }
   .items:link {
     color: black; }
   .items .items3 {
-    padding: 1rem; }
+    padding: 1rem;
+    text-align: center; }
     .items .items3 .items4 {
+      text-align: center;
       color: black; }
       .items .items3 .items4:hover {
         color: #d35e8d; }
@@ -177,7 +180,6 @@ footer {
   font-size: 15px; }
   footer .redes {
     display: inline-block;
-    padding-left: 30px;
     line-height: 2;
     align-items: center; }
     footer .redes .instagram {
@@ -208,12 +210,14 @@ footer {
 .titulo {
   font-size: 30px; }
 
-.fotofoto:hover {
-  transform: translate(10px, 20px);
-  width: 4s; }
+.fotofoto {
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0,3s ease-in-out; }
+  .fotofoto:hover {
+    transform: translate(10px, 20px);
+    width: 4s; }
 
 .inquietudes {
-  font-size: 40px;
   padding: 2rem; }
 
 .texto {
@@ -221,9 +225,9 @@ footer {
   -webkit-text-stroke: 1px #971967; }
 
 .logito {
-  padding: 3rem;
-  font-size: 30px; }
+  padding: 3rem; }
   .logito .insta {
+    text-align: center;
     color: black; }
     .logito .insta:hover {
       color: #d35e8d; }
