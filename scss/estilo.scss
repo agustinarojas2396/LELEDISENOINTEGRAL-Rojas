@@ -60,8 +60,9 @@ nav{
                 li{
                     display: inline-block;
                     text-align: center;
-                    transition:all 200ms;
+                    transition:all 300ms;
                     a{
+                        transform: all 300ms;
                         text-decoration: none;
                         display: inline-block;
                         color: $color-blanco;
@@ -73,6 +74,7 @@ nav{
 }}
 
 .nav-item{
+    transform: all 300ms;
     &:hover{
         transform: scale(1,02);
         border-radius: 100%;}}
